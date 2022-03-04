@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,700;0,800;1,200&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Image/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-light fa-xmark" onclick="hideMenu()"></i>
+                <ion-icon class="fa" name="close" onclick="hideMenu()"></ion-icon>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <ion-icon class="fa" name="menu" onclick="showMenu()"></ion-icon>
+        </nav>
+
+        <h1>Our Certificate & Online Programs For 2021</h1>
+
+    </section>
+
+    <!-- -------------- blog page content -------------- -->
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="Image/certificate.jpg" alt="">
+                <h2>Our Certificate & Online Programs For 2021</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, deleniti provident impedit dolores
+                    autem sunt commodi enim dolor consectetur magni, nesciunt dicta dignissimos quaerat veniam qui eum
+                    optio
+                    quasi voluptates.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, deleniti provident impedit dolores
+                    Voluptatem ad commodi quod omnis eos error assumenda! Lorem ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit. Molestiae at enim vero, numquam ullam iure ut temporibus magni dicta molestias?
+                    autem sunt commodi enim dolor consectetur magni, nesciunt dicta dignissimos quaerat veniam qui eum
+                    optio
+                    quasi voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolor facere sint
+                    dignissimos distinctio cumque ipsam dolore excepturi sunt animi.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fugit eum iste alias facere numquam
+                    ipsa
+                    fuga ad libero, commodi vel beatae sequi, ipsum deserunt eaque tempore rem, aperiam cumque
+                    accusantium.
+                    Nihil distinctio nam consequatur excepturi vitae, neque assumenda. Explicabo, veritatis recusandae.
+                    Voluptatem ad commodi quod omnis eos error assumenda! Lorem ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit. Molestiae at enim vero, numquam ullam iure ut temporibus magni dicta molestias?</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum dolore, quia sed commodi error
+                    aspernatur
+                    quasi quae aut unde veniam magnam odio nesciunt iste deleniti? Veritatis deserunt atque
+                    necessitatibus
+                    quasi laudantium eveniet, qui possimus natus eius in accusamus fugiat eos temporibus ex laboriosam
+                    expedita nesciunt unde error officia et harum! Autem dignissimos quam, inventore aut aperiam
+                    doloribus
+                    hic ullam expedita.</p>
+
+                    <div class="comment-box">
+                        <h3>Leave a comment</h3>
+                        <form action="" class="comment-form">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter Email">
+                            <textarea placeholder="Your Comment" rows="5"></textarea>
+                            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                        </form>
+                    </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span> 21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span> 28</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span> 15</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span> 24</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>41</span>
+                </div>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>25</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- ---------------- Footer ---------------- -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo deserunt veniam, <br> qui optio dolorem
+            inventore reiciendis ut.</p>
+        <div class="icons">
+            <ion-icon class="fa" name="logo-facebook"></ion-icon>
+            <ion-icon class="fa" name="logo-twitter"></ion-icon>
+            <ion-icon class="fa" name="logo-instagram"></ion-icon>
+            <ion-icon class="fa" name="logo-linkedin"></ion-icon>
+        </div>
+        <p> Made with <img src="Image/heart.png" class="heart" alt=""> For You</p>
+    </section>
+
+
+    <!-- ----------- JavaScript ------------ -->
+    <script>
+        // --------------- Toggle Menu --------------
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0px";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+
+
+    </script>
+</body>
+
+</html>
