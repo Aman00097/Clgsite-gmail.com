@@ -30,7 +30,7 @@ messageInfo = form.getvalue("Message")
 
 
 email_from = 'amanmourya000097@gmail.com'
-password = 'mhwj gxuf fjtt thfm'
+password = 'bxcc qllw fabe xdzu'
 
 email_body = "\n User Name: " + name + "\n Email: " + visitor_email + "\n Subject: " + subject + "\nMessage: " + messageInfo+"\n"
 subject = "New Form Submission "
