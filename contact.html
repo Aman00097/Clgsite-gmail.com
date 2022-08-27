@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,700;0,800;1,200&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Image/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-light fa-xmark" onclick="hideMenu()"></i>
+                <ion-icon class="fa" name="close" onclick="hideMenu()"></ion-icon>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <ion-icon class="fa" name="menu" onclick="showMenu()"></ion-icon>
+        </nav>
+
+        <h1>Contact Us</h1>
+
+    </section>
+
+    <!-- -------------- contact us -------------- -->
+    <section class="location">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.991256013141!2d73.87205791354975!3d18.52929727374636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c058f1287049%3A0x47a399e0464970f1!2sPune!5e0!3m2!1sen!2sin!4v1646138132242!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <ion-icon class="fa" name="home"></ion-icon>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Pune Station, Pune, Maharashtra, India</p>
+                    </span>
+                </div>
+                <div>
+                    <ion-icon class="fa" name="call"></ion-icon>
+                    <span>
+                        <h5>+91 1236547890</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <ion-icon class="fa" name="mail"></ion-icon>
+                    <span>
+                        <h5>xyz@gmail.com</h5>
+                        <p>Email us youe query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+
+                <!-- <form action="javascript:sendmail()" method="post"> -->
+                <form class="form-handler.php" method="post">
+                    <input type="text" id="Name" name="Name" placeholder="Enter your name">
+                    <input type="email" id="Sender" name="Sender" placeholder="Enter email address">
+                    <input type="text" id="Subject" name="Subject" placeholder="Enter your subject">
+                    <textarea rows="10" id="Message" name="Message" placeholder="Message"></textarea>
+                    <button type="submit" name="submit" id="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ---------------- Footer ---------------- -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo deserunt veniam, <br> qui optio dolorem
+            inventore reiciendis ut.</p>
+        <div class="icons">
+            <ion-icon class="fa" name="logo-facebook"></ion-icon>
+            <ion-icon class="fa" name="logo-twitter"></ion-icon>
+            <ion-icon class="fa" name="logo-instagram"></ion-icon>
+            <ion-icon class="fa" name="logo-linkedin"></ion-icon>
+        </div>
+        <p> Made with <img src="Image/heart.png" class="heart" alt=""> For You</p>
+    </section>
+
+
+
+
+    <!-- ----------- JavaScript SMTP ------------ -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script>
+        function sendmail() {
+            var name = document.getElementById('Name').value;
+            var email = document.getElementById('Sender').value;
+            var subject = document.getElementById('Subject').value;
+            var msg = document.getElementById('Message').value;
+
+            // var body = $('#body').val();
+
+            var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Subject: ' + subject + '<br>Message: ' + msg;
+            //console.log(name, phone, email, msg);
+
+    // ------------------------------------------------
+    
+            // code of smtp email encrypt password
+            //   amanmourya000097   627f37d9-25f5-434f-9fb2-ce6cce882bed
+
+            // amanmourya00097
+            // 9a2e1fe7-0f20-4b08-9b23-b25a0b0923ba
+            // bd4969c8-66b8-4565-a528-6d3ab94954f9
+
+                // ----------------------
+
+            // smtp elastic password smtp creating
+            // 00097
+            // B7F8DBA1AF95F2E95CA053E07A84CA89C0D2
+
+            // 000097
+            // 9F4620A931B5F108889A24F7D5B81B3ED930
+
+            // 0097
+            // 2B9BC1C2FC2630B4AC8152BCCE5D06B11BBC
+
+    // ------------------------------------------------
+
+            Email.send({
+                // Host: "smtp.gmail.com",
+                // Username: "amanmourya000097@gmail.com",
+                // Password: "mhwj gxuf fjtt thfm",
+                // bxcc qllw fabe xdzu
+                SecureToken:"bd4969c8-66b8-4565-a528-6d3ab94954f9",
+                To: 'amanmourya0097@gmail.com',
+                From: "amanmourya00097@gmail.com",
+                Subject: "This is contact form from :" + name,
+                Body: Body
+            }).then(
+                message => {
+                    //console.log (message);
+                    if (message == 'OK') {
+                        alert('Your mail has been send. Thank you for connecting.');
+                    }
+                    else {
+                        console.error(message);
+                        alert('There is error at sending message. ')
+                    }
+                }
+            );
+        }
+    </script> -->
+
+    <!-- ----------- JavaScript ------------ -->
+    <script>
+        // --------------- Toggle Menu --------------
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0px";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        } 
+    </script>
+
+
+
+<script>
+    const form = document.querySelector(".contact-form");
+    function sendmail(e) {
+        e.preventDefault();
+
+        var name = document.getElementById('Name').value;
+        var email = document.getElementById('Sender').value;
+        var subject = document.getElementById('Subject').value;
+        var msg = document.getElementById('Message').value;
+
+        var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Subject: ' + subject + '<br>Message: ' + msg;
+
+        Email.send({
+            SecureToken:"bd4969c8-66b8-4565-a528-6d3ab94954f9",
+            To: 'amanmourya0097@gmail.com',
+            From: "amanmourya00097@gmail.com",
+            Subject: "This is contact form from :" + name,
+            Body: Body
+        }).then(
+            message => alert(message)
+        );
+    }
+
+    // add the event listener submit
+    form.addEventListener("submit", sendmail);
+</script>
+
+
+</body>
+
+</html>
