@@ -156,6 +156,9 @@ nav .fa{
     .row{
         flex-direction: column;
     }
+    .course{
+        padding: 10px;
+    }
 }
 
 /* ----------- Campus ----------- */
